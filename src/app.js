@@ -8,6 +8,7 @@ const app = express()
 //console.log(__filename)
 
 //Init commit done on 24 Oct 2022 :)
+const port = process.env.PORT || 3000
 
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public')//move up current directory -> public directory
@@ -72,6 +73,6 @@ app.get('*', (req,res)=>{
     res.send('Ah hah - i share my error 404 page with you...')
 })
 
-app.listen(3000, ()=>{
-    console.log('app server started on port 3000')
+app.listen(port, ()=>{
+    console.log('app server started on port ' + port)
 })
