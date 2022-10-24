@@ -7,6 +7,8 @@ const app = express()
 //console.log(__dirname)
 //console.log(__filename)
 
+//Init commit done on 24 Oct 2022 :)
+
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname,'../public')//move up current directory -> public directory
 const viewPath = path.join(__dirname, '../templates/views')
